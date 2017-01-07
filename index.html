@@ -10,16 +10,22 @@
 </head>
 <body>
     <div id="trivia-container">
+        <div id="timer"></div>
         <div id="question"></div>
         <div id="choices">
-            <p>a. <span id="choice1" class="pick"></span></p>
+            <!--<p>a. <span id="choice1" class="pick"></span></p>
             <p>b. <span id="choice2" class="pick"></span></p>
-            <p>c. <span id="choice3" class="pick"></span></p>
+            <p>c. <span id="choice3" class="pick"></span></p>-->
         </div>
-        <div id="answer"></div>
+        <div id="wrong" class="hide"><h1>Wrong!</h1></div>
+        <div id="timeout" class="hide"><h1>Time's Up!</h1></div>
+        <div id="answer" class="hide"></div>
+        <div id="congrats" class="hide"><h1>Congratulations!</h1><h2>You are correct!</h2></div>
+        <div id="game-over" class="hide"></div>
+
     </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-    <script src="assets/javascript/app.js"></script>
+    <script src="assets/javascript/app2.js"></script>
 </body>
 </html>
