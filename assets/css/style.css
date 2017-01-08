@@ -6,10 +6,26 @@ body {
 
 h1 {
     font-size: 50px;
+    margin-bottom: 20px;
 }
 
 h2 {
     font-size: 40px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 5px 10px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 30px;
+    background-color: rgba(255,255,255,0.75);
+    border-color: rgb(0,0,0);
+    border-width: 3px;
+}
+
+button:active {
+    position: relative;
+    top: 5px;
 }
 
 #trivia-container {
@@ -25,17 +41,6 @@ h2 {
     font-size: 35px;
 }
 
-
-
-#question {
-    position: absolute;
-    width: 550px;
-    height: 100px;
-    top: 200px;
-    left: 80px;
-    text-align: center;
-}
-
 #game-intro {    
     font-size: 50px;
 }
@@ -45,10 +50,25 @@ h2 {
     font-size: 40px;
 }
 
+#timer {
+    position: absolute;
+    left: 341px;
+    top: 110px;
+}
+
+#question, #wrong, #timeout, #answer, #congrats, #game-over {
+    position: absolute;
+    width: 550px;
+    height: 100px;
+    top: 250px;
+    left: 75px;
+    text-align: center;
+}
+
 #choices {
     position: absolute;
-    top: 300px;
-    left: 80px;
+    top: 375px;
+    left: 75px;
 }
 
 .pick {

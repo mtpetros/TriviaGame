@@ -15,7 +15,7 @@ var game = {
             correctAnswer: "Antarctica"
     }],
 
-    time: 8,
+    time: 10,
 
     ques: 0,
 
@@ -36,6 +36,13 @@ var game = {
         game.time--;
         console.log(game.time);
         $("#timer").html(game.time);
+
+        if (game.time <=5) {
+            $("#timer").css("color", "rgb(255,0,0)");
+        } else {
+            $("#timer").css("color", "rgb(0,0,0");
+        }
+
         if (game.time <= 0) {
             console.log("time's up");
             clearInterval(intervalId);
@@ -90,8 +97,8 @@ var game = {
     },
 
     nextQuestion: function() {
+        game.time = 10;
         game.ques++;
-        game.time = 8;
         intervalId = setInterval(game.decrement, 1000);
         if (!$("#answer").hasClass("hide")) {
             $("#answer").addClass("hide");
@@ -135,7 +142,7 @@ var game = {
     reset: function() {
         $("#game-over").addClass("hide");
         $("#timer ,#question ,#choices").html("").removeClass("hide");
-        game.time = 8;
+        game.time = 10;
         game.ques = 0;
         game.numberRight = 0;
         game.numberWrong = 0;
