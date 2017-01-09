@@ -54,6 +54,7 @@ button:active {
     position: absolute;
     left: 341px;
     top: 110px;
+    font-size: 50px;
 }
 
 #question, #wrong, #timeout, #answer, #congrats, #game-over {
@@ -67,11 +68,15 @@ button:active {
 
 #choices {
     position: absolute;
-    top: 375px;
+    top: 335px;
     left: 75px;
 }
 
-.pick {
+#choices > p {
+    margin-top: 15px;
+}
+
+.pick {    
     background-color: rgba(100,100,200,0.5);
 }
 
